@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teach for Ukraine. Investments</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="investments">
+        <div class="main-info">
+          <p class="main-info__subtitle">інвестиції</p>
+          <p class="main-info__title">
+            зробити <br />
+            — інвестиції у програму
+          </p>
+        </div>
+        <div class="payment">
+          <p class="payment__label payment__label_strong">
+            виберіть спосіб оплати
+          </p>
+          <div class="payment__form">
+            <form action="/results" method="get">
+              <div class="payment__radio-buttons-group">
+                <div class="payment__radio-buttons-group-line">
+                  <input
+                    class="payment__radio-input"
+                    type="radio"
+                    name="payment-method"
+                    id="credit-card"
+                    value="credit-card"
+                    checked
+                  />
+                  <label
+                    class="payment__label payment__radio-label"
+                    for="credit-card"
+                    >Банківська карта</label
+                  >
+                </div>
+                <div class="payment__radio-buttons-group-line">
+                  <input
+                    class="payment__radio-input"
+                    type="radio"
+                    name="payment-method"
+                    id="paypal"
+                    value="paypal"
+                  />
+                  <label
+                    class="payment__label payment__radio-label"
+                    for="paypal"
+                    >PayPal</label
+                  >
+                </div>
+                <div class="payment__radio-buttons-group-line">
+                  <input
+                    class="payment__radio-input"
+                    type="radio"
+                    name="payment-method"
+                    id="bank-check"
+                    value="bank-check"
+                  />
+                  <label
+                    class="payment__label payment__radio-label"
+                    for="bank-check"
+                    >Банківська платіжна квитанція</label
+                  >
+                </div>
+              </div>
+
+              <p class="payment__label payment__label_strong payment__label_mt">
+                банківська карта
+              </p>
+              <div class="payment__buttons">
+                <input
+                  class="payment__radio-input_button"
+                  type="radio"
+                  name="sum"
+                  id="fifty-k"
+                  value="50k"
+                  checked
+                />
+                <label
+                  class="payment__label payment__radio-label_button"
+                  for="fifty-k"
+                  >50 000</label
+                >
+                <input
+                  class="payment__radio-input_button"
+                  type="radio"
+                  name="sum"
+                  id="thirty-k"
+                  value="30k"
+                />
+                <label
+                  class="payment__label payment__radio-label_button"
+                  for="thirty-k"
+                  >30 000</label
+                >
+                <input
+                  class="payment__radio-input_button"
+                  type="radio"
+                  name="sum"
+                  id="ten-k"
+                  value="10k"
+                />
+                <label
+                  class="payment__label payment__radio-label_button"
+                  for="ten-k"
+                  >10 000</label
+                >
+                <input
+                  class="payment__radio-input_button"
+                  type="radio"
+                  name="sum"
+                  id="one-k"
+                  value="1k"
+                />
+                <label
+                  class="payment__label payment__radio-label_button"
+                  for="one-k"
+                  >1 000</label
+                >
+                <input
+                  class="payment__number-input"
+                  type="number"
+                  min="0"
+                  placeholder="Інша сумма"
+                  name="sum"
+                />
+              </div>
+              <div class="payment__radio-buttons-group">
+                <div class="payment__radio-buttons-group-line">
+                  <input
+                    class="payment__radio-input"
+                    type="radio"
+                    name="payment-frequency"
+                    id="monthly"
+                    value="monthly"
+                    checked
+                  />
+                  <label
+                    class="payment__label payment__radio-label"
+                    for="monthly"
+                    >Щомісячно</label
+                  >
+                </div>
+                <div class="payment__radio-buttons-group-line">
+                  <input
+                    class="payment__radio-input"
+                    type="radio"
+                    name="payment-frequency"
+                    id="one-time"
+                    value="one-time"
+                  />
+                  <label
+                    class="payment__label payment__radio-label"
+                    for="one-time"
+                    >Одноразово</label
+                  >
+                </div>
+              </div>
+
+              <label
+                for="name"
+                class="payment__label payment__label_strong payment__label_mt"
+                >ім’я</label
+              >
+              <input
+                class="payment__text-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Напишіть ваше ім’я"
+              />
+              <label for="email" class="payment__label payment__label_strong"
+                >Email</label
+              >
+              <input
+                class="payment__text-input"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Напишіть вашу електронну адресу"
+              />
+
+              <div class="payment__agreement-line">
+                <input
+                  class="payment__checkbox-input"
+                  type="checkbox"
+                  name="contract-offer"
+                  id="contract-offer"
+                  value="agree"
+                  checked
+                />
+                <label
+                  for="contract-offer"
+                  class="payment__label payment__checkbox-label"
+                  >Я приймаю
+                  <a class="payment__link" href="#">Договір оферти</a></label
+                >
+              </div>
+              <div class="payment__agreement-line">
+                <input
+                  class="payment__checkbox-input"
+                  type="checkbox"
+                  name="data-protection"
+                  id="data-protection"
+                  value="agree"
+                  checked
+                />
+                <label
+                  for="data-protection"
+                  class="payment__label payment__checkbox-label"
+                  >Я приймаю
+                  <a class="payment__link" href="#"
+                    >Угоду про використання персональних даних</a
+                  ></label
+                >
+              </div>
+
+              <button class="button payment__button">відправити</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
